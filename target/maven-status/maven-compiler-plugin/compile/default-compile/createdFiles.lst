@@ -1,4 +1,7 @@
+com\example\MySQLToHiveSync.class
 com\example\utils\MySQLDDLExtractor.class
+com\example\HiveDataMerger.class
 com\example\MySQLCDCSync.class
 com\example\HiveParseTableSink.class
+com\example\DataSyncManager.class
 com\example\DDLTest.class
