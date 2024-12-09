@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <!-- Hive Metastore 配置 -->
+    <property>
+        <name>hive.metastore.uris</name>
+        <value>thrift://10.14.50.135:9083</value>
+    </property>
+
+    <!-- Hadoop 配置 -->
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://10.14.50.135:8020</value>
+    </property>
+
+    <!-- Hive Warehouse 配置 -->
+    <property>
+        <name>hive.metastore.warehouse.dir</name>
+        <value>/user/hive/warehouse</value>
+    </property>
+
+    <!-- Metastore 数据库配置 -->
+    <property>
+        <name>javax.jdo.option.ConnectionURL</name>
+        <value>jdbc:mysql://10.14.50.144:3306/hivemetastore?useSSL=false&amp;createDatabaseIfNotExist=true&amp;characterEncoding=UTF-8</value>
+    </property>
+    
+    <property>
+        <name>javax.jdo.option.ConnectionDriverName</name>
+        <value>com.mysql.jdbc.Driver</value>
+    </property>
+
+    <!-- 认证配置 -->
+    <property>
+        <name>hadoop.security.authentication</name>
+        <value>simple</value>
+    </property>
+
+    <property>
+        <name>hive.metastore.sasl.enabled</name>
+        <value>false</value>
+    </property>
+
+    <!-- 其他优化配置 -->
+    <property>
+        <name>hive.metastore.client.socket.timeout</name>
+        <value>3600</value>
+    </property>
+
+    <property>
+        <name>hive.metastore.client.connect.retry.delay</name>
+        <value>1</value>
+    </property>
+
+    <property>
+        <name>hive.metastore.client.connect.max.retries</name>
+        <value>3</value>
+    </property>
+</configuration> 

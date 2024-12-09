@@ -1,0 +1,4 @@
+com\example\utils\MySQLDDLExtractor.class
+com\example\MySQLCDCSync.class
+com\example\HiveParseTableSink.class
+com\example\DDLTest.class
